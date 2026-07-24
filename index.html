@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>julapp-shop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 24px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.08);
+    }
+    header .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+    header nav a {
+      color: #fff; text-decoration: none; margin-left: 24px;
+      font-size: 0.95rem; opacity: 0.9; transition: opacity .2s;
+    }
+    header nav a:hover { opacity: 1; }
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .hero h1 { font-size: 3.2rem; margin-bottom: 16px; letter-spacing: -1px; }
+    .hero p { font-size: 1.2rem; max-width: 600px; opacity: 0.9; margin-bottom: 32px; }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #764ba2;
+      padding: 14px 34px;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform .2s, box-shadow .2s;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(0,0,0,0.3); }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      max-width: 900px;
+      margin: 60px auto 0;
+      padding: 0 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 16px;
+      padding: 28px 24px;
+    }
+    .card h3 { margin-bottom: 10px; font-size: 1.15rem; }
+    .card p { font-size: 0.95rem; opacity: 0.85; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.85rem;
+      opacity: 0.75;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">julapp-shop</div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>Bienvenido a julapp-shop</h1>
+    <p>Tu tienda online. Encuentra los mejores productos con la mejor experiencia de compra.</p>
+    <a href="#productos" class="btn">Explorar productos</a>
+
+    <div class="features" id="productos">
+      <div class="card">
+        <h3>Envio rapido</h3>
+        <p>Recibe tus pedidos en tiempo record, con seguimiento en cada paso.</p>
+      </div>
+      <div class="card">
+        <h3>Pago seguro</h3>
+        <p>Transacciones protegidas para que compres con total tranquilidad.</p>
+      </div>
+      <div class="card">
+        <h3>Soporte 24/7</h3>
+        <p>Nuestro equipo esta disponible para ayudarte cuando lo necesites.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    &copy; 2026 julapp-shop &middot; Hecho con GitHub Pages
+  </footer>
+</body>
+</html>
